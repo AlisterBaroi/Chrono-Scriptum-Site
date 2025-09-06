@@ -80,6 +80,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',    // sets dark as default
+        respectPrefersColorScheme: false, // ignore system preference
+        disableSwitch: false,   // keep the toggle in the navbar (set true to hide)
+      },
       navbar: {
         title: 'Mrs Recorda', // logo name
         logo: {
