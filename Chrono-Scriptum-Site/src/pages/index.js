@@ -18,22 +18,28 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         {/* <p className={styles.dummyText}>{siteConfig.tagline}</p> */}
-        <p className={styles.dummyText}>Releases on Windows, Linux & macOS</p>
+        <p className={styles.dummyText}>Releases on:&nbsp;
+          {/* Windows, Linux & macOS */}
+          <img src="/img/windows.svg" alt="Windows" className={styles.platformLogo} />
+          <img src="/img/linux.svg" alt="Linux" className={styles.platformLogo} />
+          <img src="/img/macos.svg" alt="macOS" className={styles.platformLogo} />
+        </p>
+
         {/* Download Buttons */}
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg ss"
             // to="/docs/intro">
             to="https://github.com/AlisterBaroi/Chrono-Scriptum-Site">
             Windows
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg ss"
             to="https://example.com/linux-download">
             Linux
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg ss"
             to="https://example.com/mac-download">
             macOS
           </Link>
@@ -44,7 +50,7 @@ function HomepageHeader() {
         <p className={styles.dummyText2}>Build for simplicty, letting you focus on what matters on the screen.</p>
       </div>
       <div className={styles.heroImage}>
-        <img src="..\img\undraw_docusaurus_tree.svg" alt="Hero illustration" />
+        <img src="..\img\hero6.svg" alt="Hero illustration" />
       </div>
 
     </header>

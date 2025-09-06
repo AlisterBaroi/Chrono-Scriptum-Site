@@ -63,11 +63,32 @@
 }
 
 .buttons {
+  z-index: 1000 !important;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+
+.buttons:nth-child:hover {
+  transform: scale(1.5) !important;
+  color: green !important;
+}
+
+.platformLogo {
+  width: 22px;
+  height: 22px;
+  margin: 0 0.5rem 0.25rem 0.5rem;
+  vertical-align: middle;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Subtle hover effect */
+.platformLogo:hover {
+  transform: scale(1.5);
+  filter: brightness(1.2);
+}
+
 
 /* .buttonRow {
   display: flex;
@@ -90,9 +111,9 @@
 .heroBanner .container {
   flex: 1;
 } */
-.container {
+/* .container {
   z-index: 12;
-}
+} */
 
 .heroImage {
   /* flex: 1000; */
@@ -103,7 +124,7 @@
 
 .heroImage img {
   max-width: 100%;
-  margin-right: 25%;
+  margin-right: 65%;
   height: auto;
 }
 

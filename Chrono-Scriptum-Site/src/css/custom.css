@@ -32,8 +32,8 @@
 /* Base GitHub icon in navbar */
 .navbar-github-link {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   -webkit-mask: url('/img/github.svg') no-repeat center / contain;
   mask: url('/img/github.svg') no-repeat center / contain;
   background-color: var(--ifm-navbar-link-color);
