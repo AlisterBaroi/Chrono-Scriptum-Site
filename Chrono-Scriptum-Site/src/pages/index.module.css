@@ -8,6 +8,52 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  /* Tunables */
+  /* distance between grid lines */
+  --grid-size: 26px;
+  --grid-fade-radius: 62% 56%;
+  /* shape of the fade mask */
+  --grid-line: rgba(255, 255, 255, .14);
+  /* top */
+  --bg-1: hsl(168 65% 40%);
+  /* mid */
+  --bg-2: hsl(168 65% 36%);
+  /* bottom */
+  --bg-3: hsl(168 65% 32%);
+
+  /* Base background (subtle vertical gradient) */
+  background:
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+}
+
+/* Grid overlay */
+.heroBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  /* Two perpendicular repeating gradients = grid */
+  background-image:
+    repeating-linear-gradient(0deg,
+      var(--grid-line) 0,
+      var(--grid-line) 1px,
+      transparent 1px,
+      transparent var(--grid-size)),
+    repeating-linear-gradient(90deg,
+      var(--grid-line) 0,
+      var(--grid-line) 1px,
+      transparent 1px,
+      transparent var(--grid-size));
+
+  /* Fade the grid toward the edges/top with a radial mask */
+  -webkit-mask-image: radial-gradient(var(--grid-fade-radius) at 50% 35%,
+      black 35%,
+      transparent 100%);
+  mask-image: radial-gradient(var(--grid-fade-radius) at 50% 35%,
+      black 35%,
+      transparent 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +66,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+/* .buttonRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  transform: rotate(-3deg);
+  margin-top: 2rem;
+}
+
+.buttonRow a {
+  transform: rotate(3deg);
+}
+
+.heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroBanner .container {
+  flex: 1;
+} */
+
+.heroImage {
+  /* flex: 1000; */
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  margin-right: 20%;
+  height: auto;
 }
