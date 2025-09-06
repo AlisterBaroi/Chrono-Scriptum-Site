@@ -17,6 +17,8 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        {/* <p className={styles.dummyText}>{siteConfig.tagline}</p> */}
+        <p className={styles.dummyText}>Releases on Windows, Linux & macOS</p>
         {/* Download Buttons */}
         <div className={styles.buttons}>
           <Link
@@ -36,6 +38,10 @@ function HomepageHeader() {
             macOS
           </Link>
         </div>
+        {/* <p className={styles.dummyText2}>Free and Open-Source screen recorder. Build for simplicty, leting you focus on the screen activity.</p> */}
+        <br />
+        <p className={styles.dummyText2}>Free and Open-Source screen recorder.</p>
+        <p className={styles.dummyText2}>Build for simplicty, letting you focus on what matters on the screen.</p>
       </div>
       <div className={styles.heroImage}>
         <img src="..\img\undraw_docusaurus_tree.svg" alt="Hero illustration" />

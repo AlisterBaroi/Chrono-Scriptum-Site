@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Mrs Recorda',
-  tagline: 'Just Record it!',
+  tagline: 'Simply record it dear',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

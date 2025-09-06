@@ -23,3 +23,15 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+alister:
+  name: Alister Baroi
+  title: Mrs Recorda founder & chief maintainer
+  url: https://linkedin.com/in/alisterbaroi
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQF30c09TWteQA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668592942444?e=1759968000&v=beta&t=XT8zxibayuwKRDZ1SzS6JEdWML7ruLUktQqu_Rgv9f8
+  page: true
+  socials:
+    # x: yangshunz
+    linkedin: alisterbaroi
+    github: alisterbaroi
+    newsletter: https://alisterbaroi.streamlit.app
