@@ -95,8 +95,9 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/AlisterBaroi/Chrono-Scriptum-Site',
             label: 'GitHub',
+            href: 'https://github.com/AlisterBaroi/Chrono-Scriptum-Site',
+            className: 'navbar-github-link',
             position: 'right',
           },
         ],

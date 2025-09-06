@@ -28,3 +28,30 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Base GitHub icon in navbar */
+.navbar-github-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url('/img/github.svg') no-repeat center / contain;
+  mask: url('/img/github.svg') no-repeat center / contain;
+  background-color: var(--ifm-navbar-link-color);
+  /* adapts to theme */
+  margin-right: 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover state */
+.navbar-github-link:hover {
+  background-color: var(--ifm-color-primary);
+}
+
+/* Dark theme override (optional if you want different base colour) */
+html[data-theme='dark'] .navbar-github-link {
+  background-color: var(--ifm-navbar-link-color);
+}
+
+html[data-theme='dark'] .navbar-github-link:hover {
+  background-color: var(--ifm-color-primary);
+}
