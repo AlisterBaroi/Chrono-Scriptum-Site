@@ -23,23 +23,28 @@ function HomepageHeader() {
           <img src="/img/windows.svg" alt="Windows" className={styles.platformLogo} />
           <img src="/img/linux.svg" alt="Linux" className={styles.platformLogo} />
           <img src="/img/macos.svg" alt="macOS" className={styles.platformLogo} />
+
+          {/* <span className={'${styles.platformLogo} ${styles.windows}'} aria-label="Windows"></span>
+          <span className={'${styles.platformLogo} ${styles.linux}'} aria-label="Linux"></span>
+          <span className={'${styles.platformLogo} ${styles.macos}'} aria-label="macOS"></span> */}
         </p>
 
+        {/* <p className={styles.windows}>asdfghjghjjhgjhg</p> */}
         {/* Download Buttons */}
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg ss"
+            className="button button--secondary button--lg"
             // to="/docs/intro">
             to="https://github.com/AlisterBaroi/Chrono-Scriptum-Site">
             Windows
           </Link>
           <Link
-            className="button button--secondary button--lg ss"
+            className="button button--secondary button--lg"
             to="https://example.com/linux-download">
             Linux
           </Link>
           <Link
-            className="button button--secondary button--lg ss"
+            className="button button--secondary button--lg"
             to="https://example.com/mac-download">
             macOS
           </Link>
@@ -47,7 +52,7 @@ function HomepageHeader() {
         {/* <p className={styles.dummyText2}>Free and Open-Source screen recorder. Build for simplicty, leting you focus on the screen activity.</p> */}
         <br />
         <p className={styles.dummyText2}>Free and Open-Source screen recorder.</p>
-        <p className={styles.dummyText2}>Build for simplicty, letting you focus on what matters on the screen.</p>
+        <p className={styles.dummyText2}>Build for simplicity, letting you focus on what matters on the screen.</p>
       </div>
       <div className={styles.heroImage}>
         <img src="..\img\hero6.svg" alt="Hero illustration" />

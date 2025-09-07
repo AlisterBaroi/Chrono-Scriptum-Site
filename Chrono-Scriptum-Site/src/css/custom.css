@@ -45,6 +45,7 @@
 /* Hover state */
 .navbar-github-link:hover {
   background-color: var(--ifm-color-primary);
+  /* filter: brightness(1.5); */
 }
 
 /* Dark theme override (optional if you want different base colour) */
@@ -53,5 +54,6 @@ html[data-theme='dark'] .navbar-github-link {
 }
 
 html[data-theme='dark'] .navbar-github-link:hover {
-  background-color: var(--ifm-color-primary);
+  /* background-color: var(--ifm-color-primary); */
+  filter: brightness(1.5);
 }

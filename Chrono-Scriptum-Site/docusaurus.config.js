@@ -100,10 +100,11 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            label: 'GitHub',
+            // label: 'GitHub',
             href: 'https://github.com/AlisterBaroi/Chrono-Scriptum-Site',
-            className: 'navbar-github-link',
+            'aria-label': 'GitHub repository',
             position: 'right',
+            className: 'navbar-github-link',
           },
         ],
       },

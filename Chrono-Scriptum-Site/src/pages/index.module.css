@@ -70,23 +70,54 @@
   gap: 1rem;
 }
 
-.buttons:nth-child:hover {
-  transform: scale(1.5) !important;
-  color: green !important;
-}
-
-.platformLogo {
+/* .platformLogo {
   width: 22px;
   height: 22px;
   margin: 0 0.5rem 0.25rem 0.5rem;
   vertical-align: middle;
   transition: transform 0.2s ease, filter 0.2s ease;
+  color: var(--ifm-navbar-link-color);
+}
+*/
+.platformLogo {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 0.5rem 0.25rem 0.5rem;
+  vertical-align: middle;
+  /* transition: background-color 0.2s ease, transform 0.2s ease; */
+  transition: transform 0.2s ease, filter 0.2s ease;
+  /* background-color: var(--ifm-font-color-dark); */
 }
 
-/* Subtle hover effect */
+/* Mask each platform icon */
+/* .windows {
+  -webkit-mask: url('/img/windows.svg') no-repeat center / contain;
+  mask: url('/img/windows.svg') no-repeat center / contain;
+}
+
+.linux {
+  -webkit-mask: url('/img/linux.svg') no-repeat center / contain;
+  mask: url('/img/linux.svg') no-repeat center / contain;
+}
+
+.macos {
+  -webkit-mask: url('/img/macos.svg') no-repeat center / contain;
+  mask: url('/img/macos.svg') no-repeat center / contain;
+} */
+
+/* html[data-theme='light'] .platformLogo {
+  background-color: var(--ifm-font-color-dark);
+  background-color: white;
+  color: white !important;
+  color: var(--ifm-font-color-dark);
+} */
+
+/* Hover effect (uses brand colour) */
 .platformLogo:hover {
+  /* background-color: var(--ifm-color-primary); */
   transform: scale(1.5);
-  filter: brightness(1.2);
+  filter: brightness(1.25);
 }
 
 
